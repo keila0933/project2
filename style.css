@@ -1,0 +1,261 @@
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/*-------------------- css reset --------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*-------------------- All --------------------*/
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 24px;
+    line-height: 42px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+
+h1{
+    font-size: 80px;
+    line-height: 106px;
+}
+
+h2{
+    font-size: 64px;
+    line-height: 75px;
+}
+
+
+/*-------------------- header --------------------*/
+
+
+.header{
+    display: flex;
+    background-image: url(./img/banner.png);
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    padding: 356px 0 256px 0;
+}
+
+.header-content{
+    width: 340px;
+    color: #FFFFFF;
+}
+
+.header-text{
+    font-weight: 700;
+    margin-bottom: 48px;
+}
+
+.header-title{
+    font-weight: 900;
+    margin-bottom: 27px;
+}
+
+.socialIcon{
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+/*-------------------- About --------------------*/
+
+.about{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-title{
+    font-weight: 700;
+    margin: 64px 0 39px 0;
+}
+
+.about-text{
+    font-weight: 700;
+    padding-bottom: 12px;
+    border-bottom: 1px solid;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.about img{
+    display: block;
+    margin-bottom: 24px;
+}
+
+.about-exp{
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 28px;
+    padding-left: 31px;
+}
+
+.about-exp li::before{
+    content: "";
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #891818;
+    position: absolute;
+    margin: 9px 0 0 -38px;
+}
+
+/*-------------------- brand --------------------*/
+
+.brand{
+    display: flex;
+    background-color: black;
+    color: white;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brand-title{
+    font-weight: 700;
+    margin: 64px 0 16px 0;
+}
+
+.brand span{
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+
+.brand-text{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 42px;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.brand-img{
+    width: 1224px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 120px;
+}
+
+.brand img{
+    display: block;
+    margin-bottom: 40px;
+}
+
+
+/*-------------------- works --------------------*/
+
+.works{
+    display: flex;
+    background-image: url(./img/photo-1561291386-5be50364cfb5.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    width: 100%;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.works-title{
+    font-weight: 700;
+    margin: 64px 0 24px 0;
+}
+
+.works-text{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 42px;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.works-img{
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 104px;
+}
+
+.works-img p{
+    font-weight: 500;
+    font-size: 20px;
+    color:white;
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.works img{
+    display: block;
+    margin-bottom: 16px;
+}
+
+/*-------------------- footer --------------------*/
+
+.contact{
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 64px 0;
+}
+
+.contact h2{
+    margin-bottom: 16px;
+}
+.contact li{
+    font-size: 24px;
+    margin-bottom: 16px;
+}
